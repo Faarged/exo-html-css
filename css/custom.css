@@ -63,24 +63,23 @@ img{
 }
 
 /*jumbotron*/
-.jumbotron {
-  padding: 30px; /* fills out the jumbotron */
+#home{
   background-image:url(../images/hero-image.jpg);
   text-align: center;
+  color:white;
+  padding:30px;
 }
 
-.container {
-
-}
-
-.jumbotron .container {
+.jumbotron {
   max-width: 100%; /* pour s'ajuster */
-  background: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right:auto;
+  margin-left:auto;
 }
 
 .jumbotron h1 {
   text-align: center; /* centers the heading */
-  color: white;
   font-family: 'Arvo', courier, serif;
 }
 
@@ -90,15 +89,22 @@ h1{
 }
 
 @media (max-width: 767px)
-.jumbotron h1 {
+.home h1 {
     font-size: 24px;
 }
 @media (max-width: 991px)
-.jumbotron h1 {
+.home h1 {
     font-size: 44px;
 }
 @media (max-width: 1199px)
-.jumbotron h1 {
+.home h1 {
     font-size: 56px;
     margin-bottom: 30px;
+}
+
+.bouton{
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  border-radius:6px;
+  color:white;
 }
