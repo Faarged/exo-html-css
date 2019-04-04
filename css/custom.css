@@ -81,15 +81,17 @@ img{
   padding-right: 15px;
   margin-right:auto;
   margin-left:auto;
+
 }
 
-.jumbotron h1 {
-  font-family: 'Arvo', courier, serif;
+.jumbotron h1{
+    font-family: 'Arvo', courier, serif;
 }
 
 h1{
   font-weight: 500;
   line-height:1.1;
+
 }
 
 #home p{
@@ -101,6 +103,7 @@ h1{
 p{
   display: block;
   margin: 0 0 10px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 @media screen and (min-width: 768px)
@@ -130,6 +133,8 @@ p{
   color:white;
   font-size:35px;
   text-decoration: none;
+  padding: 10px 16px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .bouton:hover{
   text-decoration: underline;
@@ -189,6 +194,7 @@ i{
   overflow:hidden;
   padding-top:15px;
   padding-bottom: 15px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .box a{
@@ -200,6 +206,7 @@ i{
   padding: 6px 12px;
   font-size: 14px;
   border-radius:6px;
+
 }
 /*footer*/
 
