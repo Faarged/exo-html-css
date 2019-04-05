@@ -71,21 +71,32 @@ img{
   text-align: center;
   color:white;
   padding:30px;
-  width:100%;
-  height:100vh;
+  max-width:100%;
+  height:auto;;
 }
-
+#home .jumbotron{
+  max-width:100%;
+}
 .jumbotron {
   max-width: 100%; /* pour s'ajuster */
   padding-left: 15px;
   padding-right: 15px;
   margin-right:auto;
   margin-left:auto;
-
 }
-
+@media screen and (max-width: 768px){
+.jumbotron {
+    width: 750px;
+  }
+}
 .jumbotron h1{
     font-family: 'Arvo', courier, serif;
+}
+
+.jumbotron .fa{
+  background: transparent;
+  color:white;
+  font-size: 30px;
 }
 
 h1{
@@ -96,7 +107,7 @@ h1{
 
 #home p{
   margin-bottom:30px;
-  font-size:20px;
+  font-size:30px;
   padding: 0 10px;
 }
 
@@ -106,24 +117,32 @@ p{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-@media screen and (min-width: 768px)
-.home {
+@media screen and (min-width: 768px){
+#home {
   padding-top: 48px;
   padding-bottom: 48px;
+  max-width:100%;
+}
 }
 
-@media (max-width: 767px)
-.home h1 {
+@media screen and (max-width: 767px){
+#home h1 {
     font-size: 24px;
 }
-@media (max-width: 991px)
-.home h1 {
-    font-size: 44px;
 }
-@media (max-width: 1199px)
-.home h1 {
+
+@media screen and (min-width: 991px){
+#home h1 {
+    font-size: 44px;
+
+}
+}
+
+@media screen and (min-width: 1199px){
+#home h1 {
     font-size: 56px;
-    margin-bottom: 30px;
+
+}
 }
 
 .bouton{
@@ -181,10 +200,21 @@ hr{
   background-color: #F6F9F6;
 }
 
-i{
-  font-size: 30px;
+.fa{
+  width:2em;
+  height:2em;
+  line-height: 2em;
+  font-size:4em;
+  color:white;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
 }
-
+.fa-angle-double-right{
+  background: transparent;
+  color:#e74c3c;
+  font-size: 14px;
+}
 .box{
   display:inline-block;
   height:auto;
@@ -195,6 +225,18 @@ i{
   padding-top:15px;
   padding-bottom: 15px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+@media screen and (max-height: 991px){
+  #get-involved{
+    text-align:center;
+    margin: none
+    overflow:hidden;
+  }
+}
+@media screen and (max-height:991px){
+  .box{
+    display:block;
+  }
 }
 
 .box a{
@@ -220,4 +262,19 @@ footer{
 footer p{
   padding-top:120px;
   padding-bottom:20px;
+}
+
+/*bouton back to top*/
+#back-to-top{
+  position:absolute;
+  bottom:0;
+  right:0;
+  text-align: center;
+}
+
+.fa-arrow-up{
+  color:white;
+  font-size:1em;
+  vertical-align:bottom;
+  display: block;
 }
