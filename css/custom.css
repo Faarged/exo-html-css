@@ -120,7 +120,7 @@ p{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 767px){
 #home {
   padding-top: 48px;
   padding-bottom: 48px;
@@ -131,6 +131,12 @@ p{
 @media screen and (max-width: 767px){
 #home h1 {
     font-size: 24px;
+}
+}
+
+@media screen and (max-width: 767px){
+#home p {
+    font-size: 18px;
 }
 }
 
