@@ -7,6 +7,8 @@ body{
   padding-top:50px;
   padding-bottom: 197px;
   position:relative;
+  transition-property: translate;
+    transition-duration: 0.3s;
 }
 div{
   display:block;
@@ -267,8 +269,14 @@ footer{
 footer p{
   padding-top:120px;
   padding-bottom:20px;
+  margin-left:20%;
 }
 
+@media screen and (max-height:767px){
+  footer p{
+    margin-left:0;
+  }
+}
 /*bouton back to top*/
 #back-to-top{
   position:absolute;
