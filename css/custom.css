@@ -295,8 +295,7 @@ footer p{
 }
 
 .fa-chevron-circle-up{
-  color:white;
-  font-size:1em;
-  vertical-align:bottom;
-  display: block;
+  background-color:transparent;
+  color:black;
+  font-size:2em;
 }
