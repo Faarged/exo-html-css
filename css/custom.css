@@ -7,8 +7,6 @@ body{
   padding-top:50px;
   padding-bottom: 197px;
   position:relative;
-  transition-property: translate;
-    transition-duration: 0.3s;
 }
 div{
   display:block;
@@ -92,6 +90,7 @@ img{
     width: 750px;
   }
 }
+
 .jumbotron h1{
     font-family: 'Arvo', courier, serif;
 }
@@ -125,33 +124,31 @@ p{
   padding-top: 48px;
   padding-bottom: 48px;
   max-width:100%;
-}
+      }
 }
 
 @media screen and (max-width: 767px){
 #home h1 {
     font-size: 24px;
-}
+        }
 }
 
 @media screen and (max-width: 767px){
 #home p {
     font-size: 18px;
-}
+        }
 }
 
 @media screen and (min-width: 991px){
 #home h1 {
     font-size: 44px;
-
-}
+        }
 }
 
 @media screen and (min-width: 1199px){
 #home h1 {
     font-size: 56px;
-
-}
+          }
 }
 
 .bouton{
@@ -194,11 +191,13 @@ h2, h3{
   font-family: 'Arvo', courier, serif;
   text-transform: uppercase;
 }
+
 hr{
   border-top: 1px solid #e74c3d;
   width: 160px;
   margin-top: 15px;
 }
+
 .whocontent p{
   font-size:20px;
 }
@@ -207,6 +206,7 @@ hr{
   color:#e74c3c;
   text-decoration: none;
 }
+
 .whocontent a:hover{
   text-decoration: underline;
 }
@@ -230,11 +230,13 @@ hr{
   border-radius: 50%;
   display: inline-block;
 }
+
 .fa-angle-double-right{
   background: transparent;
   color:#e74c3c;
   font-size: 14px;
 }
+
 .box{
   display:inline-block;
   height:auto;
@@ -246,11 +248,13 @@ hr{
   padding-bottom: 15px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
 @media screen and (max-height: 991px){
   #get-involved{
     text-align:center;
   }
 }
+
 @media screen and (max-height:767px){
   .box{
     display:block;
@@ -292,6 +296,7 @@ footer p{
     margin-left:0;
   }
 }
+
 /*bouton back to top*/
 #back-to-top{
   position:absolute;
