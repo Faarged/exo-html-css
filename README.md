@@ -1,6 +1,6 @@
 # Introduction 
 
-Vous allez reproduire une maquette relativement basique en utilisant les media queries
+Vous allez reproduire une maquette relativement basique en utilisant les media queries sur la période du 4 au 8 Avril 2019
 
 # Objectifs
 
