@@ -1,0 +1,18 @@
+@mixin subtitle{
+  color:$saumon;
+  font-family: $arvo;
+  text-transform: $upp;
+}
+
+@mixin hr{
+  border-top: 1px solid #e74c3d;
+  width: 160px;
+  margin-top: 15px;
+}
+
+@mixin foot{
+  background-color: #f74c3c;
+  bottom:$null;
+  width:$max;
+  position:$abso;
+}

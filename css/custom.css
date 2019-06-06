@@ -1,312 +1,277 @@
-html{
-  height:100%;
-}
-body{
-  min-height:100%;
-  margin:0;
-  padding-top:50px;
+@charset "UTF-8";
+@import url("http://fonts.googleapis.com/css?family=Arvo");
+body {
+  min-height: 100%;
+  padding-top: 50px;
   padding-bottom: 197px;
-  position:relative;
+  margin-right: 0;
+  margin-left: 0;
+  position: relative;
 }
-div{
-  display:block;
-}
+
 /*navbar*/
-nav{
+nav {
   width: 100%;
-  min-height:50px;
+  min-height: 50px;
   background-color: black;
-  position:fixed;
-  top:0;
+  position: fixed;
+  top: 0;
   z-index: 100;
 }
-nav .container{
-  width:100%;
-  height:50px;
 
+.nav {
+  height: 50px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  font-family: "Arvo", courier, serif;
+  font-size: 13px;
 }
-.nav{
-    width:100%;
-    height:50px;
-    text-align: right;
-    margin: 0;
-    padding: 0;
-    font-family: 'Arvo', courier, serif;
-    font-size:13px;
+.nav li {
+  display: inline-block;
+  padding: 10px;
+}
+.nav li :hover {
+  margin-bottom: -4px;
+  /*Evite le décalage menu */
+  border-bottom: 4px solid #333;
+}
+.nav li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+}
+.nav li a :hover {
+  text-decoration: underline;
 }
 
-.nav li{
-    display: inline-block;
-    padding: 10px;
-    margin-bottom: 2px;
-}
-
-.navlogo{
-  z-index:10;
-  float:left;
-  padding:15px;
-}
-
-img{
+.navlogo {
+  float: left;
+  padding: 15px;
   vertical-align: middle;
 }
 
-.nav li a{
-    display: block;
-    text-decoration: none;
-    color: #333;
-    font-size: 24px;
-}
-
-.nav li:hover{
-    margin-bottom: -4px; /*Evite le décalage menu */
-    border-bottom: 4px solid #333;
-}
-.nav li a:hover{
-    text-decoration: underline;
-}
-
 /*jumbotron*/
-#home{
-  background-image:url(../images/hero-image.jpg);
+#home {
+  background-image: url(../images/hero-image.jpg);
   text-align: center;
-  color:white;
-  padding:30px;
-  max-width:100%;
-  height:auto;;
+  color: white;
+  padding: 30px;
+  max-width: 100%;
 }
-#home .jumbotron{
-  max-width:100%;
-}
+
 .jumbotron {
-  max-width: 100%; /* pour s'ajuster */
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right:auto;
-  margin-left:auto;
+  max-width: 100%;
+  /* pour s'ajuster */
 }
-@media screen and (max-width: 768px){
-.jumbotron {
+
+@media screen and (max-width: 768px) {
+  .jumbotron {
     width: 750px;
   }
 }
-
-.jumbotron h1{
-    font-family: 'Arvo', courier, serif;
+.jumbotron h1 {
+  font-family: "Arvo", courier, serif;
 }
 
-.jumbotron .fa{
+.jumbotron .fa {
   background: transparent;
-  color:white;
+  color: white;
   font-size: 30px;
 }
 
-h1{
+h1 {
   font-weight: 500;
-  line-height:1.1;
-
+  line-height: 1.1;
 }
 
-#home p{
-  margin-bottom:30px;
-  font-size:30px;
+#home p {
+  margin-bottom: 30px;
+  font-size: 30px;
   padding: 0 10px;
 }
 
-p{
+p {
   display: block;
   margin: 0 0 10px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@media screen and (min-width: 767px){
-#home {
-  padding-top: 48px;
-  padding-bottom: 48px;
-  max-width:100%;
-      }
+@media screen and (min-width: 767px) {
+  #home {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    max-width: 100%;
+  }
 }
-
-@media screen and (max-width: 767px){
-#home h1 {
+@media screen and (max-width: 767px) {
+  #home h1 {
     font-size: 24px;
-        }
+  }
 }
-
-@media screen and (max-width: 767px){
-#home p {
-    font-size: 18px;
-        }
-}
-
-@media screen and (min-width: 991px){
-#home h1 {
-    font-size: 44px;
-        }
-}
-
-@media screen and (min-width: 1199px){
-#home h1 {
-    font-size: 56px;
-          }
-}
-
-.bouton{
-  background-color: #d9534f;
-  border-color: #d43f3a;
-  border-radius:6px;
-  color:white;
-  font-size:35px;
-  text-decoration: none;
-  padding: 10px 16px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-.bouton:hover{
-  text-decoration: underline;
-}
-@media screen and (max-width:767px){
-  .bouton{
+@media screen and (max-width: 767px) {
+  #home p {
     font-size: 18px;
   }
 }
-@media screen and (max-width:767px){
-  #home .fa{
+@media screen and (min-width: 991px) {
+  #home h1 {
+    font-size: 44px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  #home h1 {
+    font-size: 56px;
+  }
+}
+.bouton {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  border-radius: 6px;
+  color: white;
+  font-size: 35px;
+  text-decoration: none;
+  padding: 10px 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bouton:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .bouton {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #home .fa {
     font-size: 18px;
   }
 }
 /* section who*/
-#who{
+#who {
   text-align: center;
 }
 
-.whocontent{
-  padding-top:30px;
-  padding-bottom:30px;
+.whocontent {
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
 }
+.whocontent p {
+  font-size: 20px;
+}
+.whocontent a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+.whocontent a:hover {
+  text-decoration: underline;
+}
 
-h2, h3{
-  color:#e74c3c;
-  font-family: 'Arvo', courier, serif;
+h2, h3 {
+  color: #e74c3c;
+  font-family: "Arvo", courier, serif;
   text-transform: uppercase;
 }
 
-hr{
+hr {
   border-top: 1px solid #e74c3d;
   width: 160px;
   margin-top: 15px;
 }
 
-.whocontent p{
-  font-size:20px;
-}
-
-.whocontent a{
-  color:#e74c3c;
-  text-decoration: none;
-}
-
-.whocontent a:hover{
-  text-decoration: underline;
-}
-
 /*section get involved*/
-
-#get-involved{
-  padding-top:30px;
-  text-align:center;
+#get-involved {
+  padding-top: 30px;
+  text-align: center;
   background-color: #F6F9F6;
   vertical-align: top;
 }
 
-.fa{
-  width:2em;
-  height:2em;
+.fa {
+  width: 2em;
+  height: 2em;
   line-height: 2em;
-  font-size:4em;
-  color:white;
+  font-size: 4em;
+  color: white;
   background-color: black;
   border-radius: 50%;
-  display: inline-block;
 }
 
-.fa-angle-double-right{
+.fa-angle-double-right {
   background: transparent;
-  color:#e74c3c;
+  color: #e74c3c;
   font-size: 14px;
 }
 
-.box{
-  display:inline-block;
-  height:auto;
-  width:auto;
-  max-width:25%;
-  margin:1.5em;
-  overflow:hidden;
-  padding-top:15px;
-  padding-bottom: 15px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.box {
+  display: inline-block;
+  max-width: 25%;
+  margin: 1.5em;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-@media screen and (max-height: 991px){
-  #get-involved{
-    text-align:center;
-  }
-}
-
-@media screen and (max-height:767px){
-  .box{
-    display:block;
-    margin:auto;
-    width:100%;
-    max-width:none;
-    overflow:visible;
-  }
-}
-
-.box a{
+.box a {
   color: #e74c3c;
   text-decoration: none;
   background-color: #fff;
   border-color: #ccc;
   border: 1px solid transparent;
   padding: 6px 12px;
-  font-size: 14px;
-  border-radius:6px;
-
+  font-size: 0.9em;
+  border-radius: 6px;
 }
-/*footer*/
-
-footer{
-  background-color: #f74c3c;
-  bottom:0;
-  width:100%;
-  position:absolute;
+.box a:hover {
+  text-decoration: underline;
 }
 
-footer p{
-  padding-top:120px;
-  padding-bottom:20px;
-  margin-left:20%;
-}
-
-@media screen and (max-height:767px){
-  footer p{
-    margin-left:0;
+@media screen and (max-height: 991px) {
+  #get-involved {
+    text-align: center;
   }
 }
+@media screen and (max-height: 767px) {
+  .box {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: none;
+    overflow: visible;
+  }
+}
+/*footer*/
+footer {
+  background-color: #f74c3c;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+footer p {
+  padding-top: 120px;
+  padding-bottom: 20px;
+  margin-left: 20%;
+}
 
+@media screen and (max-height: 767px) {
+  footer p {
+    margin-left: 0;
+  }
+}
 /*bouton back to top*/
-#back-to-top{
-  position:absolute;
-  bottom:0;
-  right:0;
+#back-to-top {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   text-align: center;
 }
 
-.fa-chevron-circle-up{
-  background-color:transparent;
-  color:black;
-  font-size:2em;
+.fa-chevron-circle-up {
+  background-color: transparent;
+  color: black;
+  font-size: 2em;
 }
+
+/*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,278 @@
+@import url('http://fonts.googleapis.com/css?family=Arvo');
+@import "variables";
+@import "mixin";
+
+
+body{
+  min-height:$max;
+  padding-top: $nav;;
+  padding-bottom: 197px;
+  margin-right: $null;
+  margin-left: $null;
+  position: $rel;
+}
+
+/*navbar*/
+nav{
+  width: $max;
+  min-height:$nav;
+  background-color: $black;
+  position: $fx;
+  top:$null;
+  z-index: 100;
+}
+
+.nav{
+    height:$nav;
+    text-align: $right;
+    margin: $null;
+    padding: $null;
+    font-family: $arvo;
+    font-size:13px;
+    li{
+      display: $il-bloc;
+      padding: 10px;
+      & :hover{
+        margin-bottom: -4px; /*Evite le décalage menu */
+        border-bottom: 4px solid #333;
+      }
+    a{
+      text-decoration: $none;
+      color: #333;
+      font-size: 24px;
+      & :hover{
+        text-decoration: $under;
+        }
+      }
+    }
+}
+
+.navlogo{
+  float:$left;
+  padding:15px;
+  vertical-align: $mid;
+}
+
+/*jumbotron*/
+#home{
+  background-image:url(../images/hero-image.jpg);
+  text-align: $center;
+  color:white;
+  padding:30px;
+  max-width:$max;
+}
+
+.jumbotron {
+  max-width: $max; /* pour s'ajuster */
+}
+@media screen and (max-width: 768px){
+.jumbotron {
+    width: 750px;
+  }
+}
+
+.jumbotron h1{
+    font-family: $arvo;
+}
+
+.jumbotron .fa{
+  background: transparent;
+  color:white;
+  font-size: 30px;
+}
+
+h1{
+  font-weight: 500;
+  line-height:1.1;
+
+}
+
+#home p{
+  margin-bottom:30px;
+  font-size:30px;
+  padding: 0 10px;
+}
+
+p{
+  display: $bloc;
+  margin: 0 0 10px;
+  font-family: $helvet;
+}
+
+@media screen and (min-width: 767px){
+#home {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-width:$max;
+      }
+}
+
+@media screen and (max-width: 767px){
+#home h1 {
+    font-size: 24px;
+        }
+}
+
+@media screen and (max-width: 767px){
+#home p {
+    font-size: 18px;
+        }
+}
+
+@media screen and (min-width: 991px){
+#home h1 {
+    font-size: 44px;
+        }
+}
+
+@media screen and (min-width: 1199px){
+#home h1 {
+    font-size: 56px;
+          }
+}
+
+.bouton{
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  border-radius:6px;
+  color:white;
+  font-size:35px;
+  text-decoration: $none;
+  padding: 10px 16px;
+  font-family: $helvet;
+}
+.bouton:hover{
+  text-decoration: $under;
+}
+@media screen and (max-width:767px){
+  .bouton{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:767px){
+  #home .fa{
+    font-size: 18px;
+  }
+}
+/* section who*/
+#who{
+  text-align: $center;
+}
+
+.whocontent{
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  p{
+    font-size:20px;
+  }
+  a{
+    color:#e74c3c;
+    text-decoration: $none;
+  &:hover{
+    text-decoration: $under;
+  }
+  }
+}
+
+h2, h3{
+  @include subtitle;
+}
+
+hr{
+  @include hr;
+}
+
+/*section get involved*/
+
+#get-involved{
+  padding-top:30px;
+  text-align:$center;
+  background-color: #F6F9F6;
+  vertical-align: top;
+}
+
+.fa{
+  width:2em;
+  height:2em;
+  line-height: 2em;
+  font-size:4em;
+  color:white;
+  background-color: $black;
+  border-radius: 50%;
+}
+
+.fa-angle-double-right{
+  background: transparent;
+  color:#e74c3c;
+  font-size: 14px;
+}
+
+.box{
+  display:$il-bloc;
+  max-width:25%;
+  margin:1.5em;
+  overflow:hidden;
+  font-family: $helvet;
+  a{
+    color: #e74c3c;
+    text-decoration: $none;
+    background-color: #fff;
+    border-color: #ccc;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 0.9em;
+    border-radius:6px;
+    &:hover{
+      text-decoration: $under;
+    }
+  }
+}
+
+@media screen and (max-height: 991px){
+  #get-involved{
+    text-align:$center;
+  }
+}
+
+@media screen and (max-height:767px){
+  .box{
+    display:$bloc;
+    margin:auto;
+    width:$max;
+    max-width:$none;
+    overflow:visible;
+  }
+}
+
+/*footer*/
+
+footer{
+  @include foot;
+  p{
+    padding-top:120px;
+    padding-bottom:20px;
+    margin-left:20%;
+  }
+}
+
+@media screen and (max-height:767px){
+  footer p{
+    margin-left:$null;
+  }
+}
+
+/*bouton back to top*/
+#back-to-top{
+  position:$abso;
+  bottom:$null;
+  right:$null;
+  text-align: $center;
+}
+
+.fa-chevron-circle-up{
+  background-color:transparent;
+  color:$black;
+  font-size:2em;
+}
